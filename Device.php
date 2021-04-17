@@ -1,6 +1,6 @@
 <?php
 
-namespace OpenWRT;
+namespace Cmservice\OpenWRT;
 
 class Device {
 
