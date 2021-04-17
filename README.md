@@ -15,7 +15,7 @@ composer require cmservice/openwrt
 ```php
 <?php
 
-use OpenWRT\Device;
+use Cmservice\OpenWRT\Device;
 
 echo Device::getIp(); // returns device's local ip address
 echo Device::getMac(); // returns device's eth0 mac 
