@@ -17,7 +17,7 @@ class Device {
     private function __construct() {
         $this->ip = strtoupper(preg_replace("/\r|\n/", "", shell_exec("ip r | grep br-lan | awk '{print $7}'")));
         $this->mac = strtoupper(preg_replace("/\r|\n/", "", file_get_contents('/sys/class/net/eth0/address')));
-        $this->networkId = $this->getNetworkIdFromIp($this->properties['ip']);
+        $this->networkId = $this->getNetworkIdFromIp($this->ip);
         $this->sshKey = $this->createOrGetSSHKey();
     }
 
