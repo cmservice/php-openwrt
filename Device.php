@@ -39,7 +39,7 @@ class Device {
 
     public static function getIp() {
         $instance = self::getInstance();
-        return $instance->id;
+        return $instance->ip;
     }
 
     public static function getMac() {
