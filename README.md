@@ -12,7 +12,7 @@ composer require cmservice/openwrt
 
 ## Usage
 
-```
+```php
 <?php
 
 use OpenWRT\Device;
