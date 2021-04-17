@@ -4,7 +4,7 @@ namespace Cmservice\OpenWRT;
 
 class Device {
 
-    private $instance;
+    private static $instance;
 
     private $ip;
     
